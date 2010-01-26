@@ -1,0 +1,2 @@
+MIT code from:
+http://anonsvn.mono-project.com/source/trunk/monodevelop/main/src/addins/MacPlatform/Framework/
