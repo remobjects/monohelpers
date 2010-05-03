@@ -34,7 +34,7 @@ namespace RemObjects.Mono.Helpers
 	
 	internal static class CoreFoundation
 	{
-		const string CFLib = "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation";
+		public const string CFLib = "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation";
 		
 		[DllImport (CFLib)]
 		static extern IntPtr CFStringCreateWithCString (IntPtr alloc, string str, int encoding);

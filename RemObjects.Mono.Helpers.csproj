@@ -53,6 +53,7 @@
     <Compile Include="Framework\CoreFoundation.cs" />
     <Compile Include="Framework\HIToolbox.cs" />
     <Compile Include="IgeMacMenuGlobal.cs" />
+    <Compile Include="MacFolders.cs" />
     <Compile Include="PlatformDetection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities.cs" />
