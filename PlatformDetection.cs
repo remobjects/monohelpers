@@ -75,14 +75,14 @@ namespace RemObjects.Mono.Helpers
         }
 
 
-        static PlatformType Platform
+        public static PlatformType Platform
         {
             get
             {
                 return platform;
             }
         }
-        static string UNameResult
+        public static string UNameResult
         {
             get
             {
