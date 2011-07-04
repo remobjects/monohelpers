@@ -939,7 +939,7 @@ namespace RemObjects.Mono.Helpers
 		char reserved; //size [225];
 	}
 	
-	[StructLayout(LayoutKind.Sequential, Pack = 2)]
+	/*[StructLayout(LayoutKind.Sequential, Pack = 2)]
 	struct FileTranslationSpec
 	{
 		uint componentSignature; // OSType
@@ -950,12 +950,11 @@ namespace RemObjects.Mono.Helpers
 	
 	[StructLayout(LayoutKind.Sequential, Pack = 2)]
 	struct FileTypeSpec
-	{/*
+	{
 		uint format; // FileType
 		long hint;
 		TranslationAttributes flags;
 		uint catInfoType; // OSType
 		uint catInfoCreator; // OSType
-		*/
-	}
+	}*/
 }
