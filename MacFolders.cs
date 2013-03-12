@@ -131,6 +131,9 @@ namespace RemObjects.Mono.Helpers
 		{
 			FSRef reference;
 			int no = FSFindFolder(domain, folderType, false, out reference);
+
+			Console.WriteLine("domain: {0} type: {1} return: {2}", domain, folderType, no);
+
 			if (no != 0) return null; 
 
 			IntPtr url = IntPtr.Zero;
