@@ -144,10 +144,10 @@ namespace RemObjects.Mono.Helpers
 				str = CFURLCopyFileSystemPath(url, kCFURLPOSIXPathStyle);
 
 				CFRange range = new CFRange();
-				range.location = 0;
-				range.length = CFStringGetLength(str);
+				range.location = (IntPtr)0;
+				range.length = (IntPtr)CFStringGetLength(str);
 
-				char[] strdata = new char[range.length];
+				char[] strdata = new char[(int)range.length];
 				CFStringGetCharacters(str, range, strdata);
 				return new String(strdata);
 			}
