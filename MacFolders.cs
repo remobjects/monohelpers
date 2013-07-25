@@ -94,12 +94,12 @@ namespace RemObjects.Mono.Helpers
 
 	public class MacFolders
 	{
-		
+
 		[StructLayout(LayoutKind.Sequential, Pack = 1)]
 		private struct CFRange
 		{
-			public int location;
-			public int length;
+			public IntPtr location;
+			public IntPtr length;
 		}
 		[StructLayout(LayoutKind.Explicit, Size = 80)]
 		private struct FSRef
@@ -134,7 +134,7 @@ namespace RemObjects.Mono.Helpers
 
 			if (no != 0) throw new Exception(string.Format("domain: {0} type: {1} return: {2}", domain, folderType, no));
 
-			if (no != 0) return null; 
+			if (no != 0) return null;
 
 			IntPtr url = IntPtr.Zero;
 			IntPtr str = IntPtr.Zero;
