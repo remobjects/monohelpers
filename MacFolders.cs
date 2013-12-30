@@ -122,7 +122,7 @@ namespace RemObjects.Mono.Helpers
 		[DllImport(CoreFoundation.CFLib, EntryPoint = "CFStringGetLength")]
 		private extern static int CFStringGetLength(IntPtr theString);
 
-		[DllImport(CoreFoundation.CFLib, EntryPoint = "CFStringGetCharacters")]
+		[DllImport(CoreFoundation.CFLib, EntryPoint = "CFStringGetCharacters", CharSet = CharSet.Unicode)]
 		private extern static void CFStringGetCharacters(IntPtr theString, CFRange range, [Out]char[] buffer);
 
 
