@@ -125,7 +125,8 @@ namespace RemObjects.Mono.Helpers
 		[DllImport(CoreFoundation.CFLib, EntryPoint = "CFStringGetCharacters", CharSet = CharSet.Unicode)]
 		private extern static void CFStringGetCharacters(IntPtr theString, CFRange range, [Out]char[] buffer);
 
-
+		[DllImport(CoreFoundation.CFLib, EntryPoint = "CFInitialize")]
+		public extern static void CFInitialize();
 
 		public static string GetFolder(MacDomains domain, uint folderType)
 		{
