@@ -1,1 +1,4 @@
 *.user
+*.fire.cache
+bin
+obj
